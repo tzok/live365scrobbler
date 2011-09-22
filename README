@@ -35,3 +35,9 @@ http://www.live365.com/stations/jeric_dfm
 4. Additional notes:
 The scrobbler sends both scrobbles and "Now listening" information. It ignores
 the radio station adverts, hopefully always :)
+
+Please note, that if some radio station has its own broadcast server and a
+profile on live365 (as Death.FM does), you can freely listen to the broadcast
+server. This scrobbler only parses the corresponding playlist from live365, but
+it is up to you how do you get the music to listen to (and if you listen to it
+at all anyway).
