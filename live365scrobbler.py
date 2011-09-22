@@ -12,7 +12,7 @@ class Live365Scrobbler():
         # check if configuration file exists
         home = os.getenv('HOME')
         xdg_config_home = os.getenv('XDG_CONFIG_HOME', home + '/.config')
-        config_file = xdg_config_home + '/live365-scrobbler/configuration'
+        config_file = xdg_config_home + '/live365scrobbler/configuration'
         if not os.path.exists(config_file):
             print('No configuration found! You must specify it in this file: ' +
                   config_file)
