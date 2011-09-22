@@ -1,0 +1,37 @@
+1. Prerequisites
+You need Python 2.x or Python 3.x with pyLast
+(http://code.google.com/p/pylast/) library installed for either of them.
+
+2. Configuration
+The configuration file is located in:
+$XDG_CONFIG_HOME/live365-scrobbler/configuration
+
+NOTE: If XDG_CONFIG_HOME is unset, the default $HOME/.config will be used
+instead.
+
+The configuration file requires these four lines:
+API_KEY = ...
+API_SECRET = ...
+USERNAME = ...
+PASSWORD = ...
+
+Your API key and secret can be obtained here:
+http://www.lastfm.pl/api/account
+
+Your username and password are your Last.fm's account data.
+
+NOTE: Please chmod to 600 the configuration file, unless you want other users
+to send prank scrobbles to Last.fm ;)
+
+3. Usage
+Just run from the command line:
+./live365scrobbler.py <STATION_NAME>
+
+Where STATION_NAME is the name in live365 online radio. For example, for
+Death.FM radio, the STATION_NAME is jeric_dfm. You can find this by looking at
+the station page i.e. in this example:
+http://www.live365.com/stations/jeric_dfm
+
+4. Additional notes:
+The scrobbler sends both scrobbles and "Now listening" information. It ignores
+the radio station adverts, hopefully always :)
